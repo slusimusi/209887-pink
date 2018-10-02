@@ -1,122 +1,133 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Приложение "PINK"</title>
-  </head>
-  <body>
-  	<header class="page-header">
-      	<a class="page-header__logo">
-        	<img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Заглушка">
-      	</a>
-      	<nav class="main-nav">
-        	<ul class="main-nav__list site-list">
-          	<li class="site-list__item">
-            	<a>Главная</a>
-          	</li>
-          	<li class="site-list__item">
-            	<a href="photo.html">Фотографии</a>
-          	</li>
-          	<li class="site-list__item">
-            	<a href="form.html">Конкурс</a>
-          	</li>
-          	<li class="site-list__item">
-            	<a href="#">HTML Academy</a>
-          	</li>
-        	</ul>
-      	</nav>
-   	   </header>
-	   <main class="page-form">
-		   <h1 class="page-form__headline">Конкурс на самое безбашенное путешествие с Пинк</h1>
-		   <p class="page-photo__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните </p>
-		   <form action="https://echo.htmlacademy.ru" method="post" class="page-form__form">
-           		<label for="form__second-name-field">Фамилия:</label>
-				<input type="text" name="name" id="form__second-name-field" placeholder="Укажите фамилию<sup>*</sup>">
-				<label for="form__first-name-field">Имя:</label>
-				<input type="text" name="name" id="form__first-name-field" placeholder="Введите ваше имя<sup>*</sup>">
-				<label for="form__last-name-field">Отчество:</label>
-				<input type="text" name="name" id="form__last-name-field" placeholder="Ну и отчество тоже">
-				<fieldset class="form__filter-achievements">
-                		<legend class="filter-achievements__legends">Ваши безбашенные достижения в путешествии</legend>
-                        		<ul class="legends filter-group">
-                                    <li class="filer-group filter-option">
-                                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="selfie" id="filter-option__selfie" checked>
-                                        <label for="filter-option__selfie">Сделал селфи с акулой</label>
-                                    </li>
-                                    <li class="filer-group filter-option">
-                                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="beach" id="filter-option__beach" checked>
-                                        <label for="filter-option__beach">Обгорел на пляже</label>
-                                    </li>
-                                    <li class="filer-group filter-option">
-                                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chuck" id="filter-option__chuck">
-                                        <label for="filter-option__chuck">Видел Чака Норриса</label>
-                                    </li>
-                                    <li class="filer-group filter-option">
-                                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="souvenirs" id="filter-option__souvenirs">
-                                        <label for="filter-option__souvenirs">Накупил сувениров</label>
-                                    </li>
-                                    <li class="filer-group filter-option">
-                                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="tower" id="filter-option__tower" checked>
-                                        <label for="filter-option__tower">Удержал башню</label>
-                                    </li>
-									<li class="filer-group filter-option">
-                                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-option__hotel">
-                                        <label for="filter-option__hotel">Разгромил отель</label>
-                                    </li>
-                                </ul>
-                </fieldset>
-				<label for="form__telephone-field">Номер телефона</label><br>
-                <input type="text" name="telephone" id="form__telephone-field" placeholder="Номер, пожалуйста"><br>
-                <label for="form__email-field">Адрес почты</label><br>
-                <input type="email" name="email" id="form__email-field" placeholder="Введите почту<sup>*</sup>"><br>
-				<fieldset class="form__filter-apps">
-                            <legend class="filter-apps__question">С каким приложением вы путешествовали?</legend>
-                                <ul class="question filter-group">
-                                    <li class="filer-group filter-option">
-                                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="ios" value="ios" id="filter-option__ios" checked>
-                                        <label for="filter-option__selfie">Pink для iOS</label>
-                                    </li>
-                                    <li class="filer-group filter-option">
-                                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="android" value="android" id="filter-option__android">
-                                        <label for="filter-option__android">Pink на Android</label>
-                                    </li>
-                                    <li class="filer-group filter-option">
-                                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="windows" value="windows" id="filter-option__windows">
-                                        <label for="filter-option__windows">Windows Phone</label>
-                                    </li>
-                                </ul>
-                </fieldset><br>
-				<label for="form__text-field">Опишите свои эмоции</label><br>
-                <textarea name="text" id="form__text-field" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea><br>
-                <input type="submit" value="Отправить форму">
-        </form>
+
+<head>
+	<meta charset="utf-8">
+	<title>Приложение "PINK"</title>
+</head>
+
+<body>
+	<header class="page-header">
+		<a class="page-header__logo">
+			<img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Заглушка">
+		</a>
+		<nav class="main-nav">
+			<button class="main-nav__toggle" type="button">Открыть меню</button>
+			<ul class="main-nav__list site-list">
+				<li class="site-list__item">
+					<a>Главная</a>
+				</li>
+				<li class="site-list__item">
+					<a href="photo.html">Фотографии</a>
+				</li>
+				<li class="site-list__item">
+					<a href="form.html">Конкурс</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#">HTML Academy</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main class="page-form">
+		<section class="form-title">
+			<h1 class="form-title__headline">Конкурс на самое безбашенное путешествие с Пинк</h1>
+			<p class="form-title__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните </p>
+		</section>
+		<form action="https://echo.htmlacademy.ru" method="post" class="page-form__form">
+			<fieldset class="form__name-fieldset">
+				<label for="second-name" class="form__label-field">Фамилия:</label><br>
+				<input type="text" name="second-name" id="second-name" placeholder="Укажите фамилию*" class="form__input"><br>
+				<label for="first-name" class="form__label-field">Имя:</label><br>
+				<input type="text" name="first-name" id="first-name" placeholder="Введите ваше имя*" class="form__input"><br>
+				<label for="last-name" class="form__label-field">Отчество:</label><br>
+				<input type="text" name="last-name" id="last-name" placeholder="Ну и отчество тоже" class="form__input"><br>
+			</fieldset>
+			<fieldset class="form__filter-fieldset">
+				<legend class="form__filter-legend">Ваши безбашенные достижения в путешествии</legend>
+				<ul class="form__filter-achivements">
+					<li class="form__filter-option">
+						<input class="visually-hidden filter-option-checkbox" type="checkbox" name="selfie" id="selfie" checked>
+						<label for="selfie" class="form__label-text">Сделал селфи с акулой</label>
+					</li>
+					<li class="form__filter-option">
+						<input class="visually-hidden filter-option-checkbox" type="checkbox" name="beach" id="beach" checked>
+						<label for="beach" class="form__label-text">Обгорел на пляже</label>
+					</li>
+					<li class="form__filter-option">
+						<input class="visually-hidden filter-option-checkbox" type="checkbox" name="chuck" id="chuck">
+						<label for="chuck" class="form__label-text">Видел Чака Норриса</label>
+					</li>
+					<li class="form__filter-option">
+						<input class="visually-hidden filter-option-checkbox" type="checkbox" name="souvenirs" id="souvenirs">
+						<label for="souvenirs" class="form__label-text">Накупил сувениров</label>
+					</li>
+					<li class="form__filter-option">
+						<input class="visually-hidden filter-option-checkbox" type="checkbox" name="tower" id="tower" checked>
+						<label for="tower" class="form__label-text">Удержал башню</label>
+					</li>
+					<li class="form__filter-option">
+						<input class="visually-hidden filter-option-checkbox" type="checkbox" name="hotel" id="hotel">
+						<label for="hotel" class="form__label-text">Разгромил отель</label>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset class="form__address-fieldset">
+				<label for="telephone" class="form__label-field">Номер телефона</label><br>
+				<input type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста" class="form__input"><br>
+				<label for="email" class="form__label-field">Адрес почты</label><br>
+				<input type="email" name="email" id="email" placeholder="Введите почту*" class="form__input"><br>
+			</fieldset>
+			<fieldset class="form__filter-fieldset">
+				<legend class="form__filter-legend">С каким приложением вы путешествовали?</legend>
+				<ul class="form__filter-apps">
+					<li class="form__filter-radio">
+						<input class="visually-hidden filter-radio" type="radio" name="ios" value="ios" id="ios" checked>
+						<label for="ios" class="form__label-text">Pink для iOS</label>
+					</li>
+					<li class="form__filter-radio">
+						<input class="visually-hidden filter-radio" type="radio" name="android" value="android" id="android">
+						<label for="android" class="form__label-text">Pink на Android</label>
+					</li>
+					<li class="form__filter-radio">
+						<input class="visually-hidden filter-radio" type="radio" name="windows" value="windows" id="windows">
+						<label for="windows" class="form__label-text">Windows Phone</label>
+					</li>
+				</ul>
+			</fieldset><br>
+			<label for="emotions" class="form__label-field">Опишите свои эмоции</label><br>
+			<textarea name="emotions" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea><br>
+			<input type="submit" value="Отправить форму">
+		</form>
 		<small class="page-form__small">
-            <sup>*</sup> — обязательные поля
-         </small>
-	   </main>
-	   <footer class="photo-footer">
-			<a class="photo-footer__logo">
-        		<img class="photo-footer__logo-image" src="http://placehold.it/150x100" alt="Заглушка">
-      		 </a>
-			 <section class="photo-footer__social social-links">
-                <h3 class="visually-hidden">Социальные сети</h3>
-				<a class="social-links__logo" href="#">
-        			<img class="social-links__logo twitter" src="http://placehold.it/150x100" alt="Заглушка">
-      		 	</a>
-				<a class="social-links__logo" href="#">
-        			<img class="social-links__logo facebook" src="http://placehold.it/150x100" alt="Заглушка">
-      		 	</a>
-				<a class="social-links__logo" href="#">
-        			<img class="social-links__logo play-google" src="http://placehold.it/150x100" alt="Заглушка">
-      		 	</a>
-			 </section>
-			 <section class="photo-footer__design">
-                 <h3 class="visually-hidden">HTML Academy</h3>
-				 <p class="photo-footer__design text">Разработано</p>
-				 <a class="photo-footer__design logo" href="#">
-        			<img class="logo htmlacademy" src="http://placehold.it/150x100" alt="Заглушка">
-      		 	</a>
-			 </section>
-		  </footer>
-  </body>
+			<sup>*</sup> — обязательные поля
+		</small>
+	</main>
+	<footer class="main-footer">
+		<a class="main-footer__logo">
+			<img class="main-footer__logo-image" src="http://placehold.it/150x100" alt="Заглушка">
+		</a>
+		<section class="main-footer__social social-links">
+			<h3 class="visually-hidden">Социальные сети</h3>
+			<a class="social-links__logo--twiter-image" href="#">
+				<p class="visually-hidden">Twitter</p>
+			</a>
+			<a class="social-links__logo--facebook-image" href="#">
+				<p class="visually-hidden">Facebook</p>
+			</a>
+			<a class="social-links__logo--play-image" href="#">
+				<p class="visually-hidden">Play Google</p>
+			</a>
+		</section>
+		<section class="main-footer__design">
+			<h3 class="visually-hidden">HTML Academy</h3>
+			<p class="main-footer__design text">Разработано</p>
+			<a class="main-footer__design logo" href="#">
+				<p class="visually-hidden">HTML Academy</p>
+				<img class="logo htmlacademy" src="http://placehold.it/150x100" alt="Заглушка">
+			</a>
+		</section>
+	</footer>
+</body>
+
 </html>
