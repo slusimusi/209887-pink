@@ -9,7 +9,13 @@
 <body>
 	<header class="page-header">
 		<a class="page-header__logo">
-			<img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Заглушка">
+			<svg id="Untitled-2" viewBox="0 0 18 12" style="background-color:#ffffff00" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" x="0px" y="0px" width="18px" height="12px">
+				<g id="Layer%201">
+					<rect x="0" y="0" width="18" height="2" fill="#ffffff" />
+					<rect x="0" y="5" width="18" height="2" fill="#ffffff" />
+					<rect x="0" y="10" width="18" height="2" fill="#ffffff" />
+				</g>
+			</svg>
 		</a>
 		<nav class="main-nav">
 			<button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -34,7 +40,7 @@
 			<h1 class="form-title__headline">Конкурс на самое безбашенное путешествие с Пинк</h1>
 			<p class="form-title__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните </p>
 		</section>
-		<form action="https://echo.htmlacademy.ru" method="post" class="page-form__form">
+		<form action="https://echo.htmlacademy.ru" method="post" class="page-form__form form">
 			<fieldset class="form__name-fieldset">
 				<label for="second-name" class="form__label-field">Фамилия:</label><br>
 				<input type="text" name="second-name" id="second-name" placeholder="Укажите фамилию*" class="form__input"><br>
@@ -47,28 +53,28 @@
 				<legend class="form__filter-legend">Ваши безбашенные достижения в путешествии</legend>
 				<ul class="form__filter-achivements">
 					<li class="form__filter-option">
-						<input class="visually-hidden filter-option-checkbox" type="checkbox" name="selfie" id="selfie" checked>
-						<label for="selfie" class="form__label-text">Сделал селфи с акулой</label>
+						<input class="visually-hidden filter-option__checkbox" type="checkbox" name="selfie" id="selfie" checked>
+						<label for="selfie" class="filter-option__label-text">Сделал селфи с акулой</label>
 					</li>
 					<li class="form__filter-option">
-						<input class="visually-hidden filter-option-checkbox" type="checkbox" name="beach" id="beach" checked>
-						<label for="beach" class="form__label-text">Обгорел на пляже</label>
+						<input class="visually-hidden filter-option__checkbox" type="checkbox" name="beach" id="beach" checked>
+						<label for="beach" class="filter-option__label-text">Обгорел на пляже</label>
 					</li>
 					<li class="form__filter-option">
-						<input class="visually-hidden filter-option-checkbox" type="checkbox" name="chuck" id="chuck">
-						<label for="chuck" class="form__label-text">Видел Чака Норриса</label>
+						<input class="visually-hidden filter-option__checkbox" type="checkbox" name="chuck" id="chuck">
+						<label for="chuck" class="filter-option__label-text">Видел Чака Норриса</label>
 					</li>
 					<li class="form__filter-option">
-						<input class="visually-hidden filter-option-checkbox" type="checkbox" name="souvenirs" id="souvenirs">
-						<label for="souvenirs" class="form__label-text">Накупил сувениров</label>
+						<input class="visually-hidden filter-option__checkbox" type="checkbox" name="souvenirs" id="souvenirs">
+						<label for="souvenirs" class="filter-option__label-text">Накупил сувениров</label>
 					</li>
 					<li class="form__filter-option">
-						<input class="visually-hidden filter-option-checkbox" type="checkbox" name="tower" id="tower" checked>
-						<label for="tower" class="form__label-text">Удержал башню</label>
+						<input class="visually-hidden filter-option__checkbox" type="checkbox" name="tower" id="tower" checked>
+						<label for="tower" class="filter-option__label-text">Удержал башню</label>
 					</li>
 					<li class="form__filter-option">
-						<input class="visually-hidden filter-option-checkbox" type="checkbox" name="hotel" id="hotel">
-						<label for="hotel" class="form__label-text">Разгромил отель</label>
+						<input class="visually-hidden filter-option__checkbox" type="checkbox" name="hotel" id="hotel">
+						<label for="hotel" class="filter-option__label-text__label-text">Разгромил отель</label>
 					</li>
 				</ul>
 			</fieldset>
@@ -98,6 +104,17 @@
 			<label for="emotions" class="form__label-field">Опишите свои эмоции</label><br>
 			<textarea name="emotions" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea><br>
 			<input type="submit" value="Отправить форму">
+			<section class="visually-hidden form__pop-up-good">
+				<b class="form__pop-up-headline">Ваша заявка отправлена</b>
+				<p clas="form__pop-up-text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и
+					оповестим вас.</p>
+				<a class="form__pop-up-button">Закрыть окно</a>
+			</section>
+			<section class="visually-hidden form__pop-up-failure">
+				<b class="form__pop-up-headline">Что-то пошло не так!</b>
+				<p clas="form__pop-up-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+				<a class="form__pop-up-button">ОК</a>
+			</section>
 		</form>
 		<small class="page-form__small">
 			<sup>*</sup> — обязательные поля
@@ -109,20 +126,20 @@
 		</a>
 		<section class="main-footer__social social-links">
 			<h3 class="visually-hidden">Социальные сети</h3>
-			<a class="social-links__logo--twiter-image" href="#">
+			<a class="social-links__logo social-links__logo--twiter" href="#">
 				<p class="visually-hidden">Twitter</p>
 			</a>
-			<a class="social-links__logo--facebook-image" href="#">
+			<a class="social-links__logo social-links__logo--facebook" href="#">
 				<p class="visually-hidden">Facebook</p>
 			</a>
-			<a class="social-links__logo--play-image" href="#">
+			<a class="social-links__logo social-links__logo--play" href="#">
 				<p class="visually-hidden">Play Google</p>
 			</a>
 		</section>
 		<section class="main-footer__design">
 			<h3 class="visually-hidden">HTML Academy</h3>
-			<p class="main-footer__design text">Разработано</p>
-			<a class="main-footer__design logo" href="#">
+			<p class="main-footer__design-text">Разработано</p>
+			<a class="main-footer__design-logo" href="#">
 				<p class="visually-hidden">HTML Academy</p>
 				<img class="logo htmlacademy" src="http://placehold.it/150x100" alt="Заглушка">
 			</a>
