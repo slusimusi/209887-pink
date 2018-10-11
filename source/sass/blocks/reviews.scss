@@ -1,0 +1,31 @@
+.reviews {
+  background-color: #ffffff;
+  text-align: center;
+  margin-top: 53px;
+}
+
+.reviews__name {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.reviews__text {
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  text-align: center;
+  padding: 0;
+  padding-bottom: 40px;
+  margin: 0;
+}
+
+.reviews__button-wrapper {
+  margin-top: 39px;
+  margin-bottom: 63px;
+}

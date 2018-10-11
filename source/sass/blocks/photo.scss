@@ -1,0 +1,42 @@
+.photo {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.photo__about-text {
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+.photo__user {
+  font-size: 20px;
+  line-height: 24px;
+  color: #283645;
+  font-weight: bold;
+}
+
+.photo__minutes {
+  font-size: 14px;
+  line-height: 24px;
+  color: #5d6873;
+}
+
+.photo__comment {
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+
+.photo__likes {
+  font-size: 12px;
+  line-height: 24px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.photo__slogan {
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  text-align: center;
+}
