@@ -6,6 +6,9 @@
 .photo__about-text {
   background-color: #f2f2f2;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .photo__user {
