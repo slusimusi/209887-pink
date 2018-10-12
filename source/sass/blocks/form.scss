@@ -1,0 +1,96 @@
+.form {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.form__name-fieldset,
+.form__filter-fieldset,
+.form__address-fieldset {
+  border: none;
+}
+
+.form__label-field {
+  font-size: 14px;
+  line-height: 30px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.form__input {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  border: 2px solid #e5e5e5;
+  padding-left: 22px;
+}
+
+.form__filter-fieldset {
+  background-image: #f2f2f2;
+}
+
+.form__filter-legend {
+  font-size: 14px;
+  line-height: 18px;
+  color: #d22856;
+  text-align: center;
+}
+
+.form__filter-option,
+.form__filter-apps,
+.form__textarea-field {
+  list-style: none;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.form__submit,
+.form__pop-up-button {
+  background-color: #2aab6c;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  padding: 23px 48px;
+  margin-top: 48px;
+  margin-bottom: 45px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  border-radius: 3px;
+}
+
+.form__small {
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.form__star {
+  color: #d22856;
+}
+
+.form__pop-up-good,
+.form__pop-up-failure {
+  background-color: #ffffff;
+}
+
+.form__pop-up-headline {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form__pop-up-text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  text-align: center;
+}
+
+.form__pop-up-wrapper {
+  background-color: #f2f2f2;
+}
