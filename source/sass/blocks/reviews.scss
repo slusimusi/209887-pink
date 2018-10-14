@@ -1,7 +1,11 @@
 .reviews {
   background-color: #ffffff;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-top: 53px;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .reviews__name {
@@ -25,7 +29,54 @@
   margin: 0;
 }
 
+.reviews__job {
+  display: none;
+}
+
 .reviews__button-wrapper {
   margin-top: 39px;
   margin-bottom: 63px;
+  display: flex;
+  justify-content: center;
 }
+
+@media (min-width: $tablet-width) {
+  .reviews__text {
+    order: 1;
+  }
+
+  .reviews__name {
+    order: 2;
+  }
+
+  .reviews__job {
+    display: block;
+    order: 3;
+    font-size: 14px;
+    line-height: 16px;
+    color: #283645;
+  }
+
+  .reviews__button-wrapper {
+    order: 4;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__text {
+    order: 1;
+  }
+
+  .reviews__name {
+    order: 2;
+  }
+
+  .reviews__job {
+    order: 3;
+  }
+
+  .reviews__button-wrapper {
+    display: none;
+  }
+}
+

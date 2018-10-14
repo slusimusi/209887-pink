@@ -4,34 +4,29 @@
 <head>
   <meta charset="utf-8">
   <title>Приложение "PINK"</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <a class="page-header__logo">
-      <svg id="Untitled-2" viewBox="0 0 18 12" style="background-color:#ffffff00" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" x="0px" y="0px" width="18px" height="12px">
-        <g id="Layer%201">
-          <rect x="0" y="0" width="18" height="2" fill="#ffffff" />
-          <rect x="0" y="5" width="18" height="2" fill="#ffffff" />
-          <rect x="0" y="10" width="18" height="2" fill="#ffffff" />
-        </g>
-      </svg>
+      <img class="page-header__img" src="http://placehold.it/150x100" alt="Заглушка">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a href="index.html">Главная</a>
+          <a>Главная</a>
         </li>
         <li class="site-list__item">
           <a href="photo.html">Фотографии</a>
         </li>
         <li class="site-list__item">
-          <a href="#">Конкурс</a>
+          <a href="form.html">Конкурс</a>
         </li>
         <li class="site-list__item">
-          <a href="https://htmlacademy.ru">HTML Academy</a>
+          <a href="#">HTML Academy</a>
         </li>
       </ul>
     </nav>
@@ -43,15 +38,21 @@
     </section>
     <form action="https://echo.htmlacademy.ru" method="post" class="page-form__form form">
       <fieldset class="form__name-fieldset">
-        <label for="second-name" class="form__label-field">Фамилия:</label><br>
-        <input type="text" name="second-name" id="second-name" placeholder="Укажите фамилию*" class="form__input"><br>
-        <label for="first-name" class="form__label-field">Имя:</label><br>
-        <input type="text" name="first-name" id="first-name" placeholder="Введите ваше имя*" class="form__input"><br>
-        <label for="last-name" class="form__label-field">Отчество:</label><br>
-        <input type="text" name="last-name" id="last-name" placeholder="Ну и отчество тоже" class="form__input"><br>
+        <div class="form__name-wrapper">
+          <label for="second-name" class="form__label-field">Фамилия:</label>
+          <input type="text" name="second-name" id="second-name" placeholder="Укажите фамилию*" class="form__input">
+        </div>
+        <div class="form__name-wrapper">
+          <label for="first-name" class="form__label-field">Имя:</label>
+          <input type="text" name="first-name" id="first-name" placeholder="Введите ваше имя*" class="form__input">
+        </div>
+        <div class="form__name-wrapper">
+          <label for="last-name" class="form__label-field">Отчество:</label>
+          <input type="text" name="last-name" id="last-name" placeholder="Ну и отчество тоже" class="form__input">
+        </div>
       </fieldset>
       <fieldset class="form__filter-fieldset">
-        <legend class="form__filter-legend">Ваши безбашенные достижения в путешествии</legend>
+        <legend class="form__filter-legend form__filter-fieldset--achieve-order">Ваши безбашенные достижения в путешествии</legend>
         <ul class="form__filter-achivements">
           <li class="form__filter-option">
             <input class="visually-hidden filter-option__checkbox" type="checkbox" name="selfie" id="selfie" checked>
@@ -80,12 +81,19 @@
         </ul>
       </fieldset>
       <fieldset class="form__address-fieldset">
-        <label for="telephone" class="form__label-field">Номер телефона</label><br>
-        <input type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста" class="form__input"><br>
-        <label for="email" class="form__label-field">Адрес почты</label><br>
-        <input type="email" name="email" id="email" placeholder="Введите почту*" class="form__input"><br>
+        <legend class="form__filter-legend form__filter-legend--show">Контактная информация</legend>
+        <div class="form__address-container">
+          <div class="form__address-wrapper">
+            <label for="telephone" class="form__label-field form__label-field--second">Номер телефона</label>
+            <input type="tel" name="telephone" id="telephone" placeholder="Номер, пожалуйста" class="form__input">
+          </div>
+          <div class="form__address-wrapper">
+            <label for="email" class="form__label-field form__label-field--second">Адрес почты</label>
+            <input type="email" name="email" id="email" placeholder="Введите почту*" class="form__input">
+          </div>
+        </div>
       </fieldset>
-      <fieldset class="form__filter-fieldset">
+      <fieldset class="form__filter-fieldset form__filter-fieldset--travel-order">
         <legend class="form__filter-legend">С каким приложением вы путешествовали?</legend>
         <ul class="form__filter-apps">
           <li class="form__filter-radio">
@@ -101,10 +109,17 @@
             <label for="windows" class="form__label-text">Windows Phone</label>
           </li>
         </ul>
-      </fieldset><br>
-      <label for="emotions" class="form__label-field">Опишите свои эмоции</label><br>
-      <textarea name="emotions" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea><br>
-      <input type="submit" value="Отправить форму">
+      </fieldset>
+      <fieldset class="form__emotions-fieldset">
+        <legend class="form__emotions-legend">Опишите свои эмоции</legend>
+        <textarea name="emotions" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях" class="form__emotions-textarea"></textarea>
+      </fieldset>
+      <div class="form__submit-wrapper">
+        <input type="submit" value="Отправить форму" class="form__submit">
+        <small class="form__small">
+          <sup>*</sup> — обязательные поля
+        </small>
+      </div>
       <section class="visually-hidden form__pop-up-good">
         <b class="form__pop-up-headline">Ваша заявка отправлена</b>
         <p clas="form__pop-up-text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и
@@ -117,9 +132,6 @@
         <a class="form__pop-up-button">ОК</a>
       </section>
     </form>
-    <small class="page-form__small">
-      <sup>*</sup> — обязательные поля
-    </small>
   </main>
   <footer class="main-footer">
     <a class="main-footer__logo">

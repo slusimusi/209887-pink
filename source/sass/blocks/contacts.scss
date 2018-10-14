@@ -20,3 +20,38 @@
   color: #d22856;
   font-weight: 300;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts__data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .contacts_text {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contacts__data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

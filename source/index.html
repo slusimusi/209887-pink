@@ -1,25 +1,20 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>Приложение "PINK"</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <a class="page-header__logo">
-      <svg id="Untitled-2" viewBox="0 0 18 12" style="background-color:#ffffff00" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" x="0px" y="0px" width="18px" height="12px">
-        <g id="Layer%201">
-          <rect x="0" y="0" width="18" height="2" fill="#ffffff" />
-          <rect x="0" y="5" width="18" height="2" fill="#ffffff" />
-          <rect x="0" y="10" width="18" height="2" fill="#ffffff" />
-        </g>
-      </svg>
+      <img class="page-header__img" src="http://placehold.it/150x100" alt="Заглушка">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a>Главная</a>
@@ -39,20 +34,23 @@
   <main class="page-main">
     <h1 class="visually-hidden">Приложение "PINK"</h1>
     <section class="applications">
-      <h2 class="visually-hidden">Ссылки на приложения</h2>
-      <a class="applications__link applications__link--modifier" href="#">Скачать приложение</a>
-      <ul class="applications__list app-list">
-        <li class="app-list__os">
-          <img class="app-list__image app-list__image--ios" src="http://placehold.it/150x100" alt="Заглушка">
-        </li>
-        <li class="app-list__os">
-          <img class="app-list__image app-list__image--android" src="http://placehold.it/150x100" alt="Заглушка">
-        </li>
-        <li class="app-list__os">
-          <img class="app-list__image app-list__image--windows" src="http://placehold.it/150x100" alt="Заглушка">
-        </li>
-      </ul>
-      <p class="applications__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <img class="applications__img" src="http://placehold.it/150x100" alt="Заглушка">
+      <div class="applications_wrapper">
+        <b class="applications__header">Взгляните на жизнь иначе!</b>
+        <a class="applications__link applications__link--modifier" href="#">Скачать приложение</a>
+        <ul class="applications__list app-list">
+          <li class="app-list__os">
+            <img class="app-list__image app-list__image--ios" src="http://placehold.it/150x100" alt="Заглушка">
+          </li>
+          <li class="app-list__os">
+            <img class="app-list__image app-list__image--android" src="http://placehold.it/150x100" alt="Заглушка">
+          </li>
+          <li class="app-list__os">
+            <img class="app-list__image app-list__image--windows" src="http://placehold.it/150x100" alt="Заглушка">
+          </li>
+        </ul>
+        <p class="applications__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
     </section>
     <section class="about">
       <div class="about__text-list">
@@ -60,44 +58,79 @@
         <p class="about__list-point">Устали от серости мегаполиса?</p>
         <p class="about__list-point">Нам есть, что вам предложить!</p>
       </div>
-      <div class="about__advantages-list">
-        <b class="about__advantages-header">Поднимает настроение</b>
-        <p class="about__advantages-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+      <div class="about__features">
+        <div class="about__advantages-list">
+          <img class="about__img-first" src="http://placehold.it/150x100" alt="Заглушка">
+          <b class="about__advantages-header">Поднимает настроение</b>
+          <p class="about__advantages-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </div>
+        <div class="about__advantages-list">
+          <img class="about__img-second" src="http://placehold.it/150x100" alt="Заглушка">
+          <b class="about__advantages-header">Меняет мир вокруг</b>
+          <p class="about__advantages-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+        <div class="about__advantages-list">
+          <img class="about__img-third" src="http://placehold.it/150x100" alt="Заглушка">
+          <b class="about__advantages-header">Заводит новых друзей</b>
+          <p class="about__advantages-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
       </div>
-      <div class="about__advantages-list">
-        <b class="about__advantages-header">Меняет мир вокруг</b>
-        <p class="about__advantages-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-      </div>
-      <div class="about__advantages-list">
-        <b class="about__advantages-header">Заводит новых друзей</b>
-        <p class="about__advantages-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+    </section>
+    <section class="research">
+      <img class="research__img" src="http://placehold.it/150x100" alt="Заглушка">
+      <div class="research__information">
+        <b class="research__header">Эффект на 24 часа!</b>
+        <p class="research__text">Британские ученые провели исследование и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+        <a href="#" class="research__link">Узнать больше об исследовании</a>
       </div>
     </section>
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы на приложение</h2>
       <b class="reviews__name">Николай Петров</b>
+      <p class="reviews__job">25 лет, водитель трамвая</p>
       <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-      <button class="reviews__button reviews__button--active" type="button"></button>
-      <button class="reviews__button" type="button"></button>
-      <button class="reviews__button" type="button"></button>
+      <div class="reviews__button-wrapper">
+        <button class="reviews__button reviews__button--active" type="button"></button>
+        <button class="reviews__button" type="button"></button>
+        <button class="reviews__button" type="button"></button>
+      </div>
     </section>
     <section class="prices">
       <h2 class="visually-hidden">Цены</h2>
       <table class="prices__list">
         <tr class="prices__first-line">
+          <td class="prices__empty">
+          </td>
+          <td class="prices__base">
+            <b class="prices__type">База</b>
+            <p class="prices__number">3,99 USD</p>
+          </td>
           <td>
             <b class="prices__type">Стандарт</b>
             <p class="prices__number">3,99 USD</p>
           </td>
+          <td class="prices__unlim">
+            <b class="prices__type">Анлим</b>
+            <p class="prices__number">9,99 USD</p>
+          </td>
         </tr>
         <tr>
-          <td class="prices__value prices__value--yes-tick">Розовый фильтр</td>
+          <td class="prices__value">Розовый фильтр</td>
+          <td class="prices__yes-tick"></td>
+          <td class="prices__yes-tick"></td>
+          <td class="prices__yes-tick"></td>
         </tr>
         <tr>
-          <td class="prices__value prices__value--yes-tick">Смайлики</td>
+          <td class="prices__value">Смайлики</td>
+          <td class="prices__no"></td>
+          <td class="prices__yes-tick"></td>
+          <td class="prices__yes-tick"></td>
         </tr>
         <tr>
-          <td class="prices__value prices__value--no-tick">Комментарии</td>
+          <td class="prices__value">Комментарии</td>
+          <td class="prices__no"></td>
+          <td class="prices__no"></td>
+          <td class="prices__yes-tick"></td>
         </tr>
       </table>
       <div class="prices__button-wrapper">
@@ -110,15 +143,48 @@
       <h3 class="visually-hidden">Контакты</h3>
       <p class="contacts__question">Остались вопросы?</p>
       <p class="contacts__question">Свяжитесь с нами!</p>
-      <b class="contacts__item-text">Звоните:</b>
-      <p class="contacts__item-value">+7(812)555-66-66</p>
-      <b class="contacts__item-text">Пишите:</b>
-      <p class="contacts__item-value">mail@htmlacademy.ru</p>
-      <b class="contacts__item-text">Приезжайте в гости:</b>
-      <p class="contacts__item-value">ул. Большая Конюшенная, 19/8</p>
+      <div class="contacts__data">
+        <div class="contacts_text">
+          <b class="contacts__item-text">Звоните:</b>
+          <p class="contacts__item-value">+7(812)555-66-66</p>
+        </div>
+        <div class="contacts_text">
+          <b class="contacts__item-text">Пишите:</b>
+          <p class="contacts__item-value">mail@htmlacademy.ru</p>
+        </div>
+        <div class="contacts_text">
+          <b class="contacts__item-text">Приезжайте в гости:</b>
+          <p class="contacts__item-value">ул. Большая Конюшенная, 19/8</p>
+        </div>
+      </div>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.320894615997652!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1529565866769" width="320" height="199" style="border:0" allowfullscreen></iframe>
     </section>
   </main>
+  <footer class="main-footer main-footer--index">
+    <a class="main-footer__logo">
+      <img class="main-footer__logo-image" src="http://placehold.it/150x100" alt="Заглушка">
+    </a>
+    <section class="main-footer__social social-links">
+      <h3 class="visually-hidden">Социальные сети</h3>
+      <a class="social-links__logo social-links__logo--twiter" href="#">
+        <p class="visually-hidden">Twitter</p>
+      </a>
+      <a class="social-links__logo social-links__logo--facebook" href="#">
+        <p class="visually-hidden">Facebook</p>
+      </a>
+      <a class="social-links__logo social-links__logo--play" href="#">
+        <p class="visually-hidden">Play Google</p>
+      </a>
+    </section>
+    <section class="main-footer__design">
+      <h3 class="visually-hidden">HTML Academy</h3>
+      <p class="main-footer__design-text">Разработано</p>
+      <a class="main-footer__design-logo main-footer__design-logo--change" href="#">
+        <p class="visually-hidden">HTML Academy</p>
+        <img class="main-footer__design-img" src="http://placehold.it/150x100" alt="Заглушка">
+      </a>
+    </section>
+  </footer>
 </body>
 
 </html>
