@@ -61,12 +61,14 @@
 @media (min-width: $tablet-width) {
   .prices {
     width: 620px;
-
   }
+
   .prices__list {
     display: flex;
     justify-content: center;
     align-content: center;
+    margin-bottom: 70px;
+    margin-top: 87px;
   }
 
   .prices__list td {
@@ -83,15 +85,8 @@
     display: block;
   }
 
-
-
   .prices__button-wrapper {
     display: none;
-  }
-
-  .prices__list {
-    margin-bottom: 70px;
-    margin-top: 87px;
   }
 }
 

@@ -26,6 +26,7 @@
     display: flex;
     flex-direction: column;
   }
+
   .about__features {
     display: flex;
     flex-direction: row;
@@ -42,7 +43,6 @@
     flex-direction: column;
   }
 }
-
 
 .about__text-list {
   background-color: #ffffff;
@@ -86,7 +86,7 @@
 
 .about__img-first,
 .about__img-second {
-  display: none
+  display: none;
 }
 
 .about__img-third {
