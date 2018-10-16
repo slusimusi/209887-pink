@@ -10,58 +10,6 @@
   display: none;
 }
 
-@media (min-width: $tablet-width) {
-  .applications {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 620px;
-    margin: 0 auto;
-  }
-
-  .applications__header {
-    display: block;
-    font-size: 40px;
-    color: #ffffff;
-    font-weight: 300;
-  }
-
-  .applications__img {
-    order: 2;
-  }
-
-  .applications_wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 113px;
-    margin-top: 105px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .applications {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 940px;
-    margin: 0 auto;
-  }
-
-  .applications_wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 370px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 113px;
-    margin-top: 105px;
-  }
-}
-
-
 .applications__link {
   font-size: 18px;
   line-height: 18px;
@@ -91,4 +39,55 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+  .applications {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .applications__header {
+    display: block;
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 300;
+  }
+
+  .applications__img {
+    order: 2;
+  }
+
+  .applications__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 113px;
+    margin-top: 105px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .applications {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .applications__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 113px;
+    margin-top: 105px;
+  }
 }

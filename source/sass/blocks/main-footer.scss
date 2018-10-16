@@ -1,10 +1,10 @@
 .main-footer {
   background-color: #ffffff;
   text-align: center;
-}
 
-.main-footer--index {
-  display: none;
+  &--index {
+    display: none;
+  }
 }
 
 .main-footer__design {
@@ -14,7 +14,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-footer--index,
   .main-footer {
     display: flex;
     flex-direction: row;
@@ -31,7 +30,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-footer--index,
   .main-footer {
     display: flex;
     flex-direction: row;

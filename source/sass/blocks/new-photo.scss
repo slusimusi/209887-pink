@@ -24,12 +24,11 @@
   font-family: "Open Sans", "Arial", sans-serif;
   text-decoration: none;
   margin-bottom: 40px;
-}
-
-.new-photo__button--active {
-  color: #d22856;
-  border: 3px solid #d22856;
-  margin-bottom: 12px;
+  &--active {
+    color: #d22856;
+    border: 3px solid #d22856;
+    margin-bottom: 12px;
+  }
 }
 
 .new-photo__settings {
