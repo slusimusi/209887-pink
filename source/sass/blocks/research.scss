@@ -1,0 +1,56 @@
+.research {
+  display: none;
+}
+
+.research__header {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.research__text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #283645;
+}
+
+.research__link {
+  font-family: "Open Sans", "Arial", sans-serif;
+  text-decoration: underline;
+  font-size: 14px;
+  line-height: 16px;
+  color: #d22856;
+}
+
+@media (min-width: $tablet-width) {
+  .research {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 333px;
+  }
+
+  .research__information {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 202px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .research {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+  }
+
+  .research__information {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
