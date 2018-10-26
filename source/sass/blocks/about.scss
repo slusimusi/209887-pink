@@ -1,7 +1,26 @@
+.about {
+  width: 320px;
+}
+
+.about__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__img-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: #f2f2f2;
+}
+
 .about__features {
   display: flex;
   flex-direction: column;
-  width: 280px;
+  align-items: center;
 }
 
 .about__text-list {
@@ -16,6 +35,7 @@
   color: #283645;
   font-weight: 300;
   text-align: center;
+  font-family: "Open Sans Light", sans-serif;
 }
 
 .about__advantages-list {
@@ -52,13 +72,18 @@
 .about__img-third {
   text-align: center;
   padding-top: 45px;
-  order: 3;
 }
 
 @media (min-width: $tablet-width) {
+  .about {
+    width: 620px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
   .about__features {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 620px;
   }
 
@@ -70,18 +95,56 @@
   .about__img-second {
     display: none;
   }
+
+  .about__img-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+
+  .about__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 620px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .about {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .about-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 940px;
   }
 
   .about__features {
     display: flex;
     flex-direction: row;
     width: 940px;
+    margin: 0 auto;
+  }
+
+  .about__advantages-list {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+  }
+
+  .about__img-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .about__img-first,
@@ -89,8 +152,16 @@
     display: block;
   }
 
-  .about__advantages-list {
-    display: flex;
-    flex-direction: column;
+  .about__img-third {
+    padding: 0;
+  }
+
+  .about__text-list {
+    width: 733px;
+  }
+
+  .about__list-point {
+    font-size: 50px;
+    font-weight: 300;
   }
 }

@@ -7,6 +7,7 @@
   font-size: 24px;
   color: #283645;
   font-weight: 300;
+  font-family: "Open Sans Light", sans-serif;
 }
 
 .contacts__item-text {
@@ -19,6 +20,12 @@
   font-size: 24px;
   color: #d22856;
   font-weight: 300;
+  font-family: "Open Sans Light", sans-serif;
+}
+
+.contacts__map {
+  width: 100%;
+  height: 199px;
 }
 
 @media (min-width: $tablet-width) {
@@ -30,14 +37,27 @@
   .contacts__data {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
+    width: 545px;
+    margin: 0 auto;
   }
 
   .contacts__text {
     display: flex;
     flex-direction: column;
+  }
+
+  .contacts__map {
+    width: 100%;
+    height: 375px;
+  }
+
+  .contacts__question {
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0;
   }
 }
 
@@ -46,12 +66,24 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 940px;
+    padding: 0 10px;
   }
 
   .contacts__data {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contacts__map {
+    width: 100%;
+    height: 501px;
+  }
+
+  .contacts__question {
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
   }
 }

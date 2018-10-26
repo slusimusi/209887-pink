@@ -1,0 +1,29 @@
+.social-links__logo {
+  border: 3px solid #e8eaec;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  margin-right: 12px;
+}
+
+.social-links__logo:last-child {
+  margin-right: 0;
+}
+
+.social-links__logo svg {
+  position: relative;
+  top: 28%;
+  left: 2%;
+}
+
+.social-links__logo--facebook svg {
+  position: relative;
+  top: 28%;
+  left: 1%;
+}
+
+.social-links__logo--youtube svg {
+  position: relative;
+  top: 28%;
+  left: 3%;
+}

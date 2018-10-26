@@ -29,6 +29,9 @@
     flex-direction: row;
     justify-content: space-around;
     min-height: 333px;
+    width: 620px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
 
   .research__information {
@@ -36,6 +39,12 @@
     flex-direction: column;
     justify-content: flex-start;
     min-height: 202px;
+    width: 310px;
+    margin-top: 103px;
+  }
+
+  .research__header {
+    width: 164px;
   }
 }
 
@@ -45,6 +54,8 @@
     flex-direction: row;
     justify-content: space-around;
     background-color: #f2f2f2;
+    width: 940px;
+    margin: 0 auto;
   }
 
   .research__information {
@@ -52,5 +63,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    width: 520px;
   }
 }

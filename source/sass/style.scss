@@ -2,7 +2,9 @@
 @import "global/variables.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
+@import "blocks/site-list";
 @import "blocks/applications.scss";
+@import "blocks/app-list.scss";
 @import "blocks/about.scss";
 @import "blocks/research.scss";
 @import "blocks/reviews.scss";
@@ -13,4 +15,6 @@
 @import "blocks/new-photo.scss";
 @import "blocks/form-title.scss";
 @import "blocks/form.scss";
+@import "blocks/filter-option.scss";
 @import "blocks/main-footer.scss";
+@import "blocks/social-links.scss";

@@ -1,25 +1,116 @@
-.site-list__item {
-  font-size: 18px;
-  line-height: 32px;
-  color: #ffffff;
-  font-weight: bold;
-  text-align: center;
-  padding: 25px 95px;
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #000000;
-  text-decoration: none;
+.main-nav {
+  position: relative;
+  margin: 0 -20px;
 }
 
-.site-list {
-  list-style: none;
+.main-nav__toggle {
+  position: absolute;
+  top: -12px;
+  right: -225px;
+  cursor: pointer;
+  border: none;
+  width: 50px;
+  height: 4px;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 0;
+  cursor: pointer;
+  border: none;
+  width: 50px;
+  height: 4px;
+  background-color: #ffffff;
+  outline: none;
+  box-shadow: 0 10px 0 0 #ffffff;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 9px 0 0 rgba(255, 255, 255, 0.3), 0 17px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+.main-nav--opened .main-nav__toggle {
+  position: absolute;
+  top: -100px;
+  right: -30px;
+  width: 30px;
+  height: 4px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  outline: none;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100px;
+    width: 30px;
+    height: 4px;
+    outline: none;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100px;
+    width: 30px;
+    height: 4px;
+    outline: none;
+    background-color: #ffffff;
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav--closed .site-list__item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.main-nav--opened .main-nav {
+  position: absolute;
+  top: -100px;
+  right: 0;
+  left: 70px;
+  z-index: 10;
+
+  min-height: 80vh;
+
+  background-color: #283645;
+}
+
+.main-nav--nojs .main-nav {
+  position: static;
+  min-height: 0;
+}
+
+.main-nav--nojs .site-list__item {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: auto;
+  .main-nav__toggle {
+    position: relative;
+    top: 10px;
+    right: 25px;
+    margin: 0;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    position: relative;
+    top: 10px;
+    right: 25px;
     margin: 0;
   }
 }
@@ -29,23 +120,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 940px;
-    margin: 0 auto;
   }
 
-  .site-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .site-list__item {
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 300;
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: none;
-    border: none;
+  .main-nav__toggle {
+    display: none;
   }
 }

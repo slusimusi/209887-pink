@@ -1,6 +1,58 @@
 .photo {
   background-color: #ffffff;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.photo__image--extend {
+  width: 320px;
+  margin: 0;
+}
+
+.photo__likes-svg {
+  fill: #d22856;
+  margin-right: 18px;
+  margin-top: 10px;
+}
+
+.photo__image--extend::before {
+  content: "Панорама дня";
+  position: relative;
+  left: 160px;
+  top: 30px;
+  width: 150px;
+  background-color: #d22856;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 19px;
+}
+
+.photo__panorama {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo__panorama-text {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+  padding-left: 17px;
+  padding-top: 12px;
+  padding-bottom: 19px;
 }
 
 .photo__about-text {
@@ -8,26 +60,40 @@
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 280px;
+}
+
+.photo__text-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-left: 17px;
+  padding-top: 15px;
+  padding-bottom: 25px;
 }
 
 .photo__user {
-  font-size: 20px;
+  font-size: 14px;
   line-height: 24px;
   color: #283645;
   font-weight: bold;
+  padding-right: 3px;
 }
 
 .photo__minutes {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   color: #5d6873;
+  text-transform: uppercase;
 }
 
 .photo__comment {
   font-size: 14px;
   line-height: 24px;
   color: #283645;
+  margin: 0;
+  padding-bottom: 5px;
 }
 
 .photo__likes {
@@ -35,6 +101,8 @@
   line-height: 24px;
   color: #d22856;
   text-transform: uppercase;
+  margin: 0;
+  margin-top: 4px;
 }
 
 .photo__slogan {
@@ -42,6 +110,8 @@
   line-height: 30px;
   color: #283645;
   text-align: center;
+  vertical-align: middle;
+  margin-bottom: 48px;
 }
 
 @media (min-width: $tablet-width) {
@@ -52,38 +122,57 @@
     margin: 0 auto;
   }
 
+  .photo__about-text {
+    width: 300px;
+  }
+
   .photo__panorama {
-    width: 620px;
-    background-color: #f2f2f2;
     margin-bottom: 50px;
   }
 
   .photo__panorama-text {
-    width: 620px;
     text-align: left;
     padding-left: 30px;
     padding-right: 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 560px;
+    margin: 0;
   }
 
   .photo__other {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 620px;
   }
 
   .photo__text-wrapper {
-    width: 300px;
-    box-sizing: border-box;
-    text-align: left;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
-    padding-bottom: 40px;
+    padding-left: 28px;
+    padding-top: 31px;
+    padding-bottom: 81px;
+  }
+
+  .photo__slogan {
+    padding-left: 95px;
+    padding-right: 95px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .photo__likes--other-place {
+    order: 2;
+  }
+
+  .photo__image--extend {
+    width: 660px;
+  }
+
+  .photo__image--extend::before {
+    left: 500px;
+    top: 100px;
   }
 }
 
@@ -91,6 +180,7 @@
   .photo {
     width: 940px;
     margin: 0 auto;
+    padding: 0 10px;
   }
 
   .photo__panorama {
@@ -99,5 +189,25 @@
 
   .photo__other {
     width: 940px;
+  }
+
+  .photo__panorama-text {
+    width: 880px;
+  }
+
+  .photo__image--extend {
+    width: 1200px;
+  }
+
+  .photo__text-wrapper {
+    padding-bottom: 30px;
+  }
+
+  .photo__slogan {
+    padding-left: 240px;
+    padding-right: 240px;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
   }
 }
